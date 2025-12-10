@@ -1,0 +1,14 @@
+# Node / Build
+node_modules/
+dist/
+build/
+.cache/
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# System
+Thumbs.db

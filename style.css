@@ -1,0 +1,103 @@
+/* ===== GLOBAL STYLE ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+    color: #222;
+}
+
+header {
+    background: #002B5B;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    background: #01497C;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+h1, h2, h3 {
+    color: #002B5B;
+}
+
+footer {
+    background: #002B5B;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.button {
+    background: #0077B6;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.button:hover {
+    background: #01497C;
+}
+
+/* Card layout */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Top logo alignment */
+.logo-container {
+    position: relative;
+    width: 100%;
+    height: 70px;   /* adjust based on logo size */
+    margin-bottom: 10px;
+}
+
+.logo-container .logo {
+    height: 50px;   /* uniform small size */
+    width: auto;
+    position: absolute;
+    top: 10px;
+}
+
+/* Left aligned logo */
+.left-logo {
+    left: 20px;
+}
+
+/* Center aligned logo */
+.center-logo {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Right aligned logo */
+.right-logo {
+    right: 20px;
+}
+
