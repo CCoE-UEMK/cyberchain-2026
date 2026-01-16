@@ -1,103 +1,225 @@
-/* ===== GLOBAL STYLE ===== */
-body {
+/* =========================================================
+   Futuristic Cyber Conference Theme — style.css
+   eHaCON 2026 | AI & Law in the Cyber Era
+   ========================================================= */
+
+/* ---------- Root Variables ---------- */
+:root {
+    --bg-dark: #020617;
+    --panel-dark: #0f172a;
+    --neon-blue: #00e5ff;
+    --neon-purple: #7c7cff;
+    --neon-pink: #ff4ecd;
+    --text-light: #e5e7eb;
+    --text-muted: #94a3b8;
+}
+
+/* ---------- Base Reset ---------- */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f8fb;
-    color: #222;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* ---------- Body ---------- */
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
 header {
-    background: #002B5B;
-    padding: 20px;
-    color: white;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    padding: 50px 20px;
     text-align: center;
+    box-shadow: 0 0 30px rgba(0,229,255,0.15);
+    border-bottom: 1px solid rgba(0,229,255,0.2);
 }
 
+header h1 {
+    font-size: 2.7em;
+    letter-spacing: 1px;
+    color: var(--neon-blue);
+    text-shadow: 0 0 12px rgba(0,229,255,0.6);
+}
+
+header p {
+    margin-top: 12px;
+    color: var(--text-muted);
+}
+
+/* ---------- Logo Bar ---------- */
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #e0f4ff, #cceeff, #b3e5ff);
+    border-bottom: 2px solid #90caf9;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+
+.logo {
+    height: 65px;
+    max-width: 160px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(0,229,255,0.6));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(124,124,255,1));
+}
+
+/* Center logo slightly larger */
+.center-logo {
+    height: 75px;
+}
+
+
+/* ---------- Navigation ---------- */
 nav {
-    background: #01497C;
-    padding: 10px;
+    background: #020617;
+    padding: 14px;
     text-align: center;
+    border-bottom: 1px solid rgba(0,229,255,0.15);
 }
 
 nav a {
-    color: #fff;
+    color: var(--neon-blue);
     text-decoration: none;
-    margin: 15px;
-    font-size: 18px;
+    margin: 0 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
-}
-
-section {
-    width: 80%;
-    margin: auto;
-    padding: 30px 0;
-}
-
-h1, h2, h3 {
-    color: #002B5B;
-}
-
-footer {
-    background: #002B5B;
     color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    text-shadow: 0 0 10px var(--neon-blue);
 }
 
-.button {
-    background: #0077B6;
-    padding: 12px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    display: inline-block;
+/* ---------- Main Layout ---------- */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-.button:hover {
-    background: #01497C;
-}
-
-/* Card layout */
+/* ---------- Cards ---------- */
 .card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    margin: 10px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    background: linear-gradient(180deg, #020617, #0f172a);
+    border-radius: 16px;
+    padding: 26px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(0,229,255,0.2);
+    box-shadow: 0 0 18px rgba(0,229,255,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Top logo alignment */
-.logo-container {
-    position: relative;
-    width: 100%;
-    height: 70px;   /* adjust based on logo size */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 35px rgba(0,229,255,0.35);
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3 {
+    color: var(--neon-blue);
+    text-shadow: 0 0 6px rgba(0,229,255,0.45);
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+/* ---------- Paragraph ---------- */
+p {
+    color: var(--text-light);
     margin-bottom: 10px;
 }
 
-.logo-container .logo {
-    height: 50px;   /* uniform small size */
+/* ---------- Buttons ---------- */
+.button, button {
+    background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+    color: black;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 18px rgba(0,229,255,0.6);
+    transition: all 0.3s ease;
+}
+
+.button:hover, button:hover {
+    box-shadow: 0 0 32px rgba(124,124,255,0.9);
+    transform: scale(1.05);
+}
+
+/* ---------- Forms ---------- */
+input, textarea, select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,229,255,0.25);
+    background: #020617;
+    color: var(--text-light);
+    outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 10px rgba(0,229,255,0.5);
+}
+
+/* ---------- Tables ---------- */
+table {
     width: auto;
-    position: absolute;
-    top: 10px;
+    max-width: 100%;
+    margin: 16px auto;
+    border-collapse: collapse;
+    background: rgba(2,6,23,0.6);
+    border-radius: 12px;
+    overflow: hidden;
+}
+th, td {
+    padding: 12px 18px;
+    border-bottom: 1px solid rgba(0,229,255,0.15);
+    text-align: center;
 }
 
-/* Left aligned logo */
-.left-logo {
-    left: 20px;
+th {
+    background: rgba(0,229,255,0.08);
 }
 
-/* Center aligned logo */
-.center-logo {
-    left: 50%;
-    transform: translateX(-50%);
+/* ---------- Footer ---------- */
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    border-top: 1px solid rgba(0,229,255,0.15);
+    margin-top: 40px;
 }
 
-/* Right aligned logo */
-.right-logo {
-    right: 20px;
+/* ---------- Scrollbar (Webkit) ---------- */
+::-webkit-scrollbar {
+    width: 8px;
 }
 
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--neon-blue), var(--neon-purple));
+    border-radius: 10px;
+}
