@@ -1,51 +1,146 @@
-# CYBERCHAIN 2026 – International Conference Website
+eHaCON 2026 – Conference Website
 
-Welcome to the official repository of **CYBERCHAIN 2026: First International Conference on Blockchain, Cybersecurity, AI & Emerging Trends**, organized by the **Cybersecurity Centre of Excellence (CCoE)** in association with the **Department of Computer Application, University of Engineering & Management (UEM), Kolkata)**.
+Welcome to the official repository of
+8th International Ethical Hacking Conference (eHaCON 2026 – 2nd Edition)
+Theme: Cyberchain: Securing the Future with Blockchain, AI, and Cyber Resilience
 
-🌐 **Live Website:** (Add your GitHub Pages / Netlify link here)
+The conference is organized by the Cybersecurity Centre of Excellence (CCoE),
+in association with the Department of Computer Applications,
+University of Engineering & Management (UEM), Kolkata, India.
 
----
+🎯 About eHaCON 2026
 
-## 🎯 About CYBERCHAIN 2026
+eHaCON 2026 is a premier international forum that brings together researchers, academicians, industry experts, policymakers, and students to discuss recent advances, challenges, and future directions in ethical hacking, cybersecurity, blockchain, artificial intelligence, and emerging digital technologies.
 
-CYBERCHAIN 2026 aims to bring together researchers, academicians, students, industry professionals, developers, and practitioners for knowledge sharing and discussion on cutting-edge domains such as Blockchain, Cybersecurity, AI, IoT, Quantum Technologies, and more.
+The conference aims to foster high-quality research dissemination, interdisciplinary collaboration, and knowledge exchange through paper presentations, invited talks, and expert discussions.
 
-The conference provides a platform for high-quality research presentations, workshops, and invited talks from distinguished experts.
+🎓 Tracks / Topics of Interest
 
----
-
-## 🎓 Tracks / Topics of Interest
 (But not limited to)
 
-### 🔷 **Blockchain & Distributed Systems**
-- Blockchain architectures & protocols  
-- Smart contracts and decentralized applications (dApps)  
-- Consensus mechanisms  
-- Blockchain in finance, healthcare, supply chain  
+🔷 Blockchain & Distributed Ledger Technologies
 
-### 🔷 **Cybersecurity**
-- Network & system security  
-- Cryptography and secure communication  
-- Threat modeling, vulnerability analysis  
-- IoT/IIoT security, cloud security  
+Smart contracts and dApp security
 
-### 🔷 **Artificial Intelligence & Machine Learning**
-- Generative AI and Large Language Models (LLMs)  
-- AI for cybersecurity  
-- Explainable AI (XAI), trustworthy AI  
-- Deep learning, reinforcement learning  
+Blockchain for digital identity and trust
 
-### 🔷 **Emerging Technologies**
-- Quantum computing and post-quantum cryptography  
-- Edge and fog computing  
-- 5G/6G and mobile network security  
-- Digital identity and authentication  
+DeFi security and risk management
 
----
+Web3 security architectures
 
-## 📁 Project Structure
+Blockchain in governance, healthcare, and finance
 
-All files (HTML, CSS, images, logos) are stored in a single folder:
+🔷 Cybersecurity & Ethical Hacking
+
+Penetration testing and vulnerability assessment
+
+Malware analysis and threat intelligence
+
+Cyber forensics and incident response
+
+Zero Trust architectures
+
+Critical infrastructure security
+
+🔷 Artificial Intelligence in Cybersecurity
+
+AI/ML for threat detection and prediction
+
+Adversarial AI and model security
+
+Explainable AI for cyber defense
+
+Autonomous security systems
+
+AI-driven digital forensics
+
+🔷 Privacy, Cryptography & Trust Technologies
+
+Post-quantum cryptography
+
+Zero-knowledge proofs and privacy-preserving systems
+
+Secure multi-party computation
+
+Data protection and regulatory compliance
+
+Trusted execution environments (TEEs)
+
+🔷 IoT, Cloud & Edge Security
+
+IoT security frameworks
+
+Cloud security and secure DevOps
+
+Edge computing security
+
+Container and virtualization security
+
+5G/6G security challenges
+
+🔷 Digital Forensics & Cyber Law
+
+Blockchain for digital evidence
+
+Cybercrime investigation techniques
+
+AI and law enforcement
+
+Legal, ethical, and regulatory challenges
+
+Compliance and cyber governance
+
+🔷 Emerging Technologies & Future Threats
+
+Quantum computing and cybersecurity
+
+Metaverse and XR security
+
+Biometric and behavioral security
+
+Cyber-physical systems
+
+Human-centric security models
+
+🔷 Secure Systems, Networks & Architectures
+
+Network security and intrusion detection
+
+Secure operating systems
+
+Hardware security and firmware attacks
+
+Secure software engineering
+
+Resilient system design
+
+🔷 FinTech, RegTech & Digital Economy Security
+
+Digital payments and cryptocurrency security
+
+Fraud detection systems
+
+Secure financial architectures
+
+AI in financial risk modeling
+
+Compliance automation
+
+🔷 Ethics, Policy & Responsible AI
+
+Ethical hacking practices
+
+Responsible AI development
+
+Bias, fairness, and transparency
+
+AI governance frameworks
+
+Social impact of cybersecurity technologies
+
+📁 Project Structure
+
+All website files are maintained in a single folder for easy hosting via GitHub Pages or Netlify:
 
 index.html
 about.html
@@ -55,9 +150,22 @@ submission.html
 registration.html
 contact.html
 style.css
-logo1.png
-logo2.png
-logo3.png
+logo-iem.png
+logo-ccoe.png
+logo-uem.png
 favicon.ico
 README.md
 .gitignore
+
+🚀 Deployment
+
+This website can be deployed using:
+
+GitHub Pages
+
+Netlify (recommended for future scalability)
+
+Updates can be made directly through GitHub, and changes will reflect automatically once redeployed.
+
+📬 Contact
+For conference-related queries, please refer to the Contact page on the website or reach out to the organizing committee via official channels.
