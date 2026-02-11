@@ -100,27 +100,106 @@ main {
     text-align: center;
 }
 
+.submission-instructions {
+  max-width: 900px;     /* adjust as needed: 800–1000px */
+  margin: 0 auto 30px;  /* center horizontally */
+}
+
+
 /* ===== Committee Layout ===== */
 
+/* ===== Committees Page Layout ===== */
+
 .committee-section {
-    margin-bottom: 32px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
 }
 
 .committee-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.committee-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
 }
 
-.committee-section > h2 {
+/* Committee cards */
+.committee-card h3 {
     text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Photos */
+.committee-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+    border: 3px solid #90caf9;
+}
+
+/* Tables inside committees */
+.committee-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.committee-card td {
+    padding: 6px 4px;
+    font-size: 14px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+.committee-row,
+.committee-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.center {
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.committee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.committee-table th {
+  background: #002B5B;
+  color: white;
+  padding: 10px;
+}
+
+.committee-table td {
+  vertical-align: top;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+    .committee-row {
+        grid-template-columns: 1fr;
+    }
 }
 .submission-section {
   padding: 20px;
@@ -134,6 +213,16 @@ main {
 
 .grid-2 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;   /* KEY for visual centering */
+}
+
+.section-narrow {
+  max-width: 1100px;   /* ideal for 2-column layouts */
+  margin: 0 auto 40px;
 }
 
 .full-width {
@@ -152,7 +241,7 @@ main {
   gap: 20px;
 }
 .important-dates-table {
-  width: 100%;
+  width: 60%;
   border-collapse: collapse;
   margin-bottom: 24px;
 }
