@@ -77,6 +77,21 @@ main {
     border: 1px solid rgba(0,229,255,0.2);
     box-shadow: 0 0 14px rgba(0,229,255,0.15);
 }
+/* CFP Poster Styling */
+.cfp-card {
+  max-width: 850px;     /* narrow like About / Submission Instructions */
+  margin: 30px auto;
+  text-align: center;
+}
+
+.cfp-poster {
+  width: 100%;
+  max-width: 500px;     /* prevents over-stretching */
+  border-radius: 12px;
+  margin: 12px auto;
+  display: block;
+  box-shadow: 0 0 18px rgba(0,229,255,0.25);
+}
 
 
 /* ---------- Mixed Layout Sections ---------- */
@@ -293,3 +308,4 @@ footer {
     }
 
     }
+
